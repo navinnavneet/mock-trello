@@ -1,0 +1,19 @@
+.Modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+
+.CheckList {
+  background-color: #ffecef;
+  position: absolute;
+  left: 15rem;
+  top: 3rem;
+  right: 15rem;
+  min-height: 40rem;
+  z-index: 10;
+}
