@@ -1,0 +1,67 @@
+.Header {
+  background-color: #ffcaca;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.HeaderLeft {
+  display: flex;
+}
+
+.Logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Logo h1 {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+.Navbar {
+  padding: 0 1rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.Navbar li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.Navbar li:hover {
+  background-color: #ffecef;
+}
+
+.HeaderRight {
+  display: flex;
+  align-items: center;
+}
+
+.Input {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+}
+
+.Input input {
+  border: none;
+  outline: none;
+  padding-left: 0.5rem;
+}
+
+.User {
+  background-color: #372948;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+}
+
+.User p {
+  color: #ffecef;
+}

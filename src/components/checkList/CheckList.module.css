@@ -1,0 +1,9 @@
+.CheckList {
+  width: 60%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.CheckList input {
+  margin: 0.4rem;
+}

@@ -65,3 +65,30 @@ export async function deleteCard(id) {
     }
   );
 }
+
+export async function getCheckListItems(id) {
+  return fetch(
+    `https://api.trello.com/1/cards/${id}/checkItemStates?key=${key}&token=${token}`,
+    {
+      method: "GET",
+    }
+  );
+}
+
+export async function getCheckLists(id) {
+  return fetch(
+    `https://api.trello.com/1/cards/${id}/checklists?key=${key}&token=${token}`,
+    {
+      method: "GET",
+    }
+  );
+}
+
+export async function createCheckList(id, name) {
+  return fetch(
+    `https://api.trello.com/1/cards/${id}/checklists?name=${name}&key=${key}&token=${token}`,
+    {
+      method: "POST",
+    }
+  );
+}
