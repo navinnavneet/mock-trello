@@ -20,7 +20,6 @@ export default class CardDetails extends Component {
     getData
       .getCheckLists(this.props.id)
       .then((response) => {
-        console.log(`Response: ${response.status} ${response.statusText}`);
         return response.text();
       })
       .then((text) => {
@@ -42,10 +41,10 @@ export default class CardDetails extends Component {
         return response.text();
       })
       .then((text) => {
-        console.log(JSON.parse(text));
         const newCheckLists = [...this.state.checkLists];
+
         newCheckLists.push(JSON.parse(text));
-        this.setState({ checkLists: newCheckLists });
+        this.setState({ checkLists: newCheckLists, newCheckList: "" });
       })
       .catch((err) => console.error(err));
   };
